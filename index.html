@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+
+		<meta charset="utf-8">
+		<title>Sidebar</title>
+		<meta name="author" content="ML">
+		<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+		<link rel="stylesheet" href="style.css">
+		<script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		
+	</head>
+
+	<body>
+		<div class="doc">
+			<div class="sidebar">
+				<div class="sidehide">
+					<i class="fa fa-times" aria-hidden="true"></i>
+				</div>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">My Account</a></li>
+					<li><a href="#">Buy/Sell</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Setting</a></li>
+					<li><a href="#">about</a></li>
+				</ul>
+				
+			</div>
+			<div class="content">
+				<h2>sidebar</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et turpis leo. Nulla ut congue eros. Nunc sit amet est quis eros maximus consequat eget vel leo. Vivamus placerat, mauris ac fermentum venenatis, magna orci volutpat magna, ac gravida libero nisi eu quam. Sed vehicula mi vitae massa bibendum suscipit. Morbi dictum lobortis vestibulum. Nullam sed efficitur leo.</p>
+				<span class="hide">Show Sidebar</span>
+			</div>
+			
+		</div>
+		<script type="text/javascript">
+			$(".sidehide").on('click', function(){
+				$('.doc').toggleClass("show");
+			}
+			);
+		</script>
+
+		<script type="text/javascript">
+			$(".hide").on('click', function(){
+				$('.doc').toggleClass("show");
+			}
+			);
+
+		</script>
+
+	</body>
+</html>
